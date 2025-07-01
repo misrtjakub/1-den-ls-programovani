@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>C# Kurz – Den 1</title>
+  <title>C# Kurz - Den 1</title>
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
@@ -98,7 +98,7 @@
         </section>
         <section>
           <p>Každým dnem přibývají ve světě nové technologie</p>
-          <p>(– Vývojáři jsou ti, kteří je ovládají)</p>
+          <p>(- Vývojáři jsou ti, kteří je ovládají)</p>
         </section>
         <section>
           <p>V C# můžeš vytvořit hry, aplikace nebo nástroje pro reálný svět</p>
@@ -115,17 +115,18 @@
         <section>
           <h2>CO OČEKÁVAT?</h2>
           <ul>
-            <li class="fragment">Všeobecný přehled internetových technologií</li>
-            <li class="fragment">Naučíš se všechny základní technologie pro tvorbu webu</li>
-            <li class="fragment">Solidní základ pro pokračování kariéry v IT</li>
+            <li class="fragment">Základní přehled moderního programování v jazyce C#</li>
+            <li class="fragment">Naučíš se psát vlastní aplikace v C# pomocí .NET</li>
+            <li class="fragment">Pevný základ pro další rozvoj v oblasti vývoje softwaru</li>
           </ul>
         </section>
         <section>
           <h2>CO NEOČEKÁVAT?</h2>
           <ul>
-            <li class="fragment">Profesionální tvorba webových stránek</li>
-            <li class="fragment">Že se vše naučíš</li>
+            <li class="fragment">Profesionální úroveň vývoje v C#</li>
+            <li class="fragment">Že zvládneš úplně všechno hned</li>
           </ul>
+
         </section>
         <section>
           <h2>Naše očekávání od vás</h2>
@@ -137,37 +138,601 @@
           </ul>
         </section>
       </section>
-      
+
       <section>
         <h2>DISCORD</h2>
         <p>blablabla.com</p>
       </section>
 
-
-
       <section>
-        <h2>Bonus: Kalkulačka</h2>
-        <pre><code class="language-csharp">
-Console.Write("Zadej první číslo: ");
-int a = int.Parse(Console.ReadLine());
-Console.Write("Zadej druhé číslo: ");
-int b = int.Parse(Console.ReadLine());
-Console.WriteLine("Součet: " + (a + b));
-          </code></pre>
-      </section>
-
-      <section>
-        <h2>Otázky na závěr</h2>
+        <h2>Harmonogram</h2>
         <ul>
-          <li>Co je to proměnná?</li>
-          <li>Jak vypíšeme text na obrazovku?</li>
-          <li>Jak se zeptáme uživatele na vstup?</li>
+          <li>Teorie: Co je programování a C#
+            <ul>
+              <li>krátká historie a využití</li>
+            </ul>
+          </li>
+          <li>IDE</li>
+          <li>První program</li>
+          <li>Základy C#</li>
         </ul>
       </section>
 
       <section>
-        <h2>Zítra: Podmínky!</h2>
-        <p><em>„Můžeš do kina?“</em> ... <strong>if (vek >= 15)</strong></p>
+        <section>
+          <h1>Programování</h1>
+        </section>
+        <section>
+          <h1>Co si pod slovem <em><u>programování</u></em> představíte vy?</h1>
+        </section>
+        <section>
+          <h2>CO JE PROGRAMOVÁNÍ?</h2>
+          <ul>
+            <li class="fragment" data-fragment-index="0">Proces tvorby instrukcí pro počítač</li>
+            <li class="fragment" data-fragment-index="1">Řešení problémů pomocí logiky a algoritmů</li>
+            <li class="fragment" data-fragment-index="2">Základní stavební prvek digitálního světa</li>
+          </ul>
+        </section>
+        <section>
+          <h2>CO JE C#?</h2>
+          <ul>
+            <li class="fragment" data-fragment-index="0">Víceúčelový, kompilovaný, objektově orientovaný jazyk</li>
+            <li class="fragment" data-fragment-index="1">Vyvinutý v Microsoftu (2000)</li>
+            <li class="fragment" data-fragment-index="2">Součást platformy .NET</li>
+          </ul>
+        </section>
+        <section>
+          <h2>PROČ C#?</h2>
+          <ul>
+            <li class="fragment" data-fragment-index="0">Snadno čitelná a konzistentní syntaxe</li>
+            <li class="fragment" data-fragment-index="1">Široké využití - desktop, web, hry (Unity)</li>
+            <li class="fragment" data-fragment-index="2">Silná komunita a podpora</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>HISTORIE C# - PŘEHLED</h2>
+          <p>Od první verze v roce 2000 až po .NET 8 (2024)</p>
+        </section>
+
+        <section>
+          <h2>2000-2005</h2>
+          <ul>
+            <li class="fragment">2000: Oznámení C# a .NET Framework 1.0</li>
+            <li class="fragment">2002: C# 1.0 - první verze</li>
+            <li class="fragment">2005: C# 2.0 - šablony (<>), iterátory (yield)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>2006-2012</h2>
+          <ul>
+            <li class="fragment">2007: C# 3.0 - LINQ, zkrácený zápis (=>, var)</li>
+            <li class="fragment">2010: C# 4.0 - dynamické typy (dynamic)</li>
+            <li class="fragment">2012: C# 5.0 - asynchronní kód (async/await)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>2015-2024</h2>
+          <ul>
+            <li class="fragment">2015: C# 6.0 - interpolace řetězců ($"")</li>
+            <li class="fragment">2017: C# 7.x - podmínky v patternu (is, switch)</li>
+            <li class="fragment">2020: C# 9.0 - záznamy (record)</li>
+            <li class="fragment">2021-2024: C# 10-13 - .NET 6-8 (global using, list patterns)</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section
+          data-background-image="https://learn.microsoft.com/cs-cz/visualstudio/get-started/csharp/media/vs-2022/csharp-aspnet-index-cshtml-editing.png?view=vs-2022">
+          <h1>IDE - WIP jsem na kali a nechce se mi na win</h1>
+        </section>
+        <section>
+          <h2>CO JE IDE?</h2>
+          <ul>
+            <li class="fragment">Integrované vývojové prostředí</li>
+            <li class="fragment">Program, který usnadňuje psaní, ladění a spouštění kódu</li>
+            <li class="fragment">Obsahuje editor, debugger a další nástroje</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>NAŠE IDE: Visual Studio</h2>
+          <ul>
+            <li class="fragment">Oficiální IDE pro C# od Microsoftu</li>
+            <li class="fragment">Podpora .NET a tvorby desktop, web i herních aplikací</li>
+            <li class="fragment">Možnosti rozšíření (extensions, pluginy)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>ALTERNATIVY</h2>
+          <ul>
+            <li class="fragment">Visual Studio Code (lehčí varianta)</li>
+            <li class="fragment">JetBrains Rider (komerční)</li>
+            <li class="fragment">Online IDE: GitHub Codespaces, Replit, .NET fiddle</li>
+          </ul>
+        </section>
+        <section
+          style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin-top: 30px;">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png"
+            alt="Visual Studio" width="200">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/250px-Visual_Studio_Code_1.35_icon.svg.png"
+            alt="Visual Studio Code" width="200">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/JetBrains_Rider_Icon.svg/800px-JetBrains_Rider_Icon.svg.png"
+            alt="JetBrains Rider" width="200">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYnNhUjd9aIFlRxUddoV1HKBsXdXUJLTvB-Q&s"
+            alt=".NET Fiddle" width="200">
+        </section>
+        <section>
+          <h1>Visual Studio <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png"
+              alt="Visual Studio" width="100"></h1>
+          <img
+            src="https://learn.microsoft.com/en-us/visualstudio/ide/media/vs-2022/start-window-create-new-project.png?view=vs-2022"
+            alt="Visual Studio" width="80%">
+        </section>
+        <section>
+          <a href="https://visualstudio.microsoft.com/" target="_blank">https://visualstudio.microsoft.com/</a>
+        </section>
+        <section>
+          <p>Vytvořme si první C# projekt!</p>
+        </section>
+        <section>
+          <h2>Vytvoření projektu</h2>
+          <ul>
+            <li class="fragment">Otevřete Visual Studio</li>
+            <li class="fragment">Vyberte "Create a new project" (Ctrl + N)</li>
+            <li class="fragment">Vyberte "Console App (.NET Core)"</li>
+            <li class="fragment">Zadejte název projektu (např. "MyFirstApp")</li>
+            <li class="fragment">Vyberte umístění projektu</li>
+            <li class="fragment">Klikněte na "Create"</li>
+            <li class="fragment">Uložte projekt (Ctrl + S)</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Struktura programu</h1>
+        </section>
+
+        <section>
+          <h2>1. Import knihoven</h2>
+          <pre><code class="language-csharp" data-line-numbers>using System;</code></pre>
+          <ul>
+            <li class="fragment">Importuje knihovnu <code>System</code></li>
+            <li class="fragment">Zahrnuje základní funkce jako <code>Console</code></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>2. Třída programu</h2>
+          <pre><code class="language-csharp" data-line-numbers data-ln-start-from="3">class Program
+{
+    // ...
+}</code></pre>
+          <ul>
+            <li class="fragment">Každý program musí být ve třídě</li>
+            <li class="fragment">Zde se jmenuje <code>Program</code></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Hlavní metoda</h2>
+          <pre><code class="language-csharp" data-line-numbers data-ln-start-from="5">static void Main()
+{
+    // ...
+}</code></pre>
+          <ul>
+            <li class="fragment">Vstupní bod aplikace</li>
+            <li class="fragment"><code>static</code> - nevyžaduje instanci třídy</li>
+            <li class="fragment"><code>void</code> - nevrací žádnou hodnotu</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Výpis do konzole</h2>
+          <pre><code class="language-csharp" data-line-numbers data-ln-start-from="7">Console.WriteLine("Ahoj světe!");</code></pre>
+          <ul>
+            <li class="fragment">Vypíše text do konzole</li>
+            <li class="fragment">Automaticky přidá nový řádek</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. Čekání na klávesu</h2>
+          <pre><code class="language-csharp" data-line-numbers data-ln-start-from="8">Console.ReadKey();</code></pre>
+          <ul>
+            <li class="fragment">Zastaví program, dokud uživatel nestiskne klávesu</li>
+            <li class="fragment">Užitečné při testování v konzoli</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Celý program</h2>
+          <pre><code class="language-csharp" data-line-numbers>using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ahoj světe!");
+        Console.ReadKey();
+    }
+}</code></pre>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Proměnné</h1>
+        </section>
+        <section>
+          <h2>Proměnná</h2>
+          <ul>
+            <li class="fragment" data-fragment-index="0">uložení dat v programu</li>
+            <li class="fragment" data-fragment-index="1">data se ukládají v operační paměti (RAM)</li>
+            <li class="fragment" data-fragment-index="2">musí mít určené <b>jméno</b> a <b>datový typ</b></li>
+            <li class="fragment" data-fragment-index="3">její hodnotu lze měnit</li>
+            <li class="fragment" data-fragment-index="4"><b>deklarace</b></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Jméno proměnné</h2>
+          <ul>
+            <li class="fragment" data-fragment-index="0">používáme na více místech v kódu</li>
+            <li class="fragment" data-fragment-index="1">mělo by být výstižné a krátké</li>
+            <li class="fragment" data-fragment-index="2">používáme zejména anglické názvy</li>
+            <li class="fragment" data-fragment-index="3">jména mohou v jednom bloku existovat pouze jednou</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Co je to vlastně ten blok?</h2>
+        </section>
+        <section>
+          <pre><code class="language-csharp">using System;
+
+class Program
+{
+    static void Main()
+    {
+        // První blok
+        {
+            int cislo = 10;
+            Console.WriteLine("První blok: " + cislo);
+        }
+
+        // Druhý blok
+        {
+            int cislo = 20;  // Tady je to OK - jiný blok
+            Console.WriteLine("Druhý blok: " + cislo);
+        }
+    }
+}
+</code></pre>
+        </section>
+        <section>
+          <h2>Pojmenování proměnných</h2>
+          <div style="display: flex; justify-content: space-around; gap: 40px; flex-wrap: wrap; margin-top: 30px;">
+            <div style="flex: 1; min-width: 300px;">
+              <h3>Nesprávně:</h3>
+              <pre><code class="language-none" data-line-numbers>persons_nam_e
+School
+drinkID
+age_
+aLongVariableLengthThatDoesntMakeAnySense
+      </code></pre>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+              <h3>Správně:</h3>
+              <pre><code class="language-none" data-line-numbers>personName
+school
+drinkId
+age
+      </code></pre>
+            </div>
+
+          </div>
+        </section>
+
+      </section>
+      <section>
+        <section>
+          <h1>Datové typy</h1>
+        </section>
+        <section>
+          <h2>Datový typ</h2>
+          <ul>
+            <li class="fragment">Určení, co daná proměnná obsahuje</li>
+            <li class="fragment">Píše se vždy před jméno proměnné</li>
+            <li class="fragment">Ukládáme jako binární hodnotu</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Celé číslo</h2>
+          <ul>
+            <li class="fragment">short, int, long</li>
+            <li class="fragment">short: -32 768 až +32 767</li>
+            <li class="fragment">int: -2 147 483 648 až +2 147 483 647</li>
+            <li class="fragment">long: -9 223 372 036 854 775 808 až +9 223 372 036 854 775 807</li>
+          </ul>
+
+        </section>
+        <section>
+          <h2>Celé číslo</h2>
+          <pre><code class="language-csharp" data-line-numbers>short age = 18;
+int accountBalance = 1180040;
+long nationalDebt = 9223372036854775807;
+  </code></pre>
+        </section>
+
+      </section>
+      <section>
+        <section>
+          <h2>Kladné celé číslo</h2>
+          <ul>
+            <li class="fragment">ushort, uint, ulong</li>
+            <li class="fragment">Větší rozsah, protože neobsahují záporná čísla</li>
+            <li class="fragment">ushort: 0 až +65 535</li>
+            <li class="fragment">uint: 0 až +4 294 967 295</li>
+            <li class="fragment">ulong: 0 až +18 446 744 073 709 551 615</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Kladné celé číslo</h2>
+          <pre><code class="language-csharp" data-line-numbers>ushort age = 18;
+uint iq = 102;
+ulong distanceToStars = 18446744073709551615;
+  </code></pre>
+
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Znak</h2>
+          <ul>
+            <li class="fragment">char</li>
+            <li class="fragment">Lze uložit jen jeden znak</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Znak</h2>
+          <pre><code class="language-csharp" data-line-numbers>char sortBy = 'a';</code></pre>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Text</h2>
+          <ul>
+            <li class="fragment">string</li>
+            <li class="fragment">Řetězec znaků</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Text</h2>
+          <pre><code class="language-csharp" data-line-numbers>string name = "Jakub";
+string school = "Smíchovská střední průmyslová škola a gymnázium";</code></pre>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Pravdivostní hodnota</h2>
+          <ul>
+            <li class="fragment">boolean</li>
+            <li class="fragment">Pouze dvě hodnoty: <code>true</code> a <code>false</code></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Pravdivostní hodnota</h2>
+          <pre><code class="language-csharp" data-line-numbers>bool isStudent = true;
+bool hasGraduated = false;</code></pre>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Číslo s desetinnou čárkou</h2>
+          <ul>
+            <li class="fragment">float / double / decimal</li>
+            <li class="fragment">float: přesnost cca 6 číslic</li>
+            <li class="fragment">double: přesnost cca 15 číslic</li>
+            <li class="fragment">decimal: přesnost cca 28 číslic</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Číslo s desetinnou čárkou</h2>
+          <pre><code class="language-csharp" data-line-numbers>float age = 18.4f;
+double average = 1.20123d;
+decimal pi = 3.14159265358979323846m;</code></pre>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>KLÍČOVÁ SLOVA</h2>
+          <ul>
+            <li class="fragment">názvy, které nelze používat pro proměnné</li>
+          </ul>
+        </section>
+        <section> <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/" target="_blank">
+            https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/
+          </a></section>
+      </section>
+      <section>
+        <section>
+          <h2>Přepisování hodnoty</h2>
+          <ul>
+            <li class="fragment">U proměnných lze přepisovat hodnotu</li>
+          </ul>
+        </section>
+        <section>
+
+          <h2>PŘEPISOVÁNÍ HODNOTY</h2>
+          <pre><code class="language-csharp" data-line-numbers>int age = 18;
+age = 19;
+
+string school = "Základní škola Vesmírná";
+school = "SSPŠaG";
+  </code></pre>
+
+
+        </section>
+      </section>
+      <section>
+        <h2>KOMENTÁŘE</h2>
+        <ul>
+          <li class="fragment">označení textu, který se nezkompiluje</li>
+          <li class="fragment">používáme na poznámky či dokumentaci</li>
+        </ul>
+
+        <pre class="fragment"><code class="language-csharp" data-line-numbers>// Komentář
+/*
+Víceřádkový komentář
+*/
+  </code></pre>
+      </section>
+      <section>
+        <section>
+          <h2>Konstanty</h2>
+          <ul>
+            <li class="fragment">Hodnota musí být definována již při deklaraci</li>
+            <li class="fragment">Hodnotu nelze změnit</li>
+            <li class="fragment">Speciální proměnná</li>
+            <li class="fragment">Šetří výpočetní nároky</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Konstanty</h2>
+          <pre><code class="language-csharp" data-line-numbers>const double pi = 3.14159;
+const int maxScore = 100;
+maxScore = 120; // Chyba - nelze změnit
+  </code></pre>
+        </section>
+
+      </section>
+      <section>
+        <section>
+          <h1>Konzole</h1>
+        </section>
+        <section>
+          <h2>Konzole</h2>
+          <ul>
+            <li class="fragment">Třída <code>Console</code> — konzole</li>
+            <li class="fragment">Komunikace mezi programem a uživatelem</li>
+            <li class="fragment">Zapisování a čtení</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Třída</h2>
+          <ul>
+            <li class="fragment">Seskupení vlastností a metod</li>
+            <li class="fragment">Vlastnost - speciální proměnná</li>
+            <li class="fragment">Metoda - rozdělení příkazů</li>
+            <li class="fragment">Přístup pomocí tečky (<code>.</code>)</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Metody a funkce</h2>
+          <ul>
+            <li class="fragment">Část kódu, kterou lze zavolat</li>
+            <li class="fragment">Přijímá parametry</li>
+            <li class="fragment">Vrací návratovou hodnotu, nebo nic</li>
+          </ul>
+        </section>
+        <section>
+          <h2>VYPISOVÁNÍ</h2>
+          <ul>
+            <li class="fragment">hodnoty, které lze převést na text, můžeme vypsat</li>
+            <li class="fragment">
+              <code>Console.Write()</code> a <code>Console.WriteLine()</code>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>VYPISOVÁNÍ</h2>
+          <pre><code class="language-csharp" data-line-numbers>Console.WriteLine("Hello world!");
+
+const string name = "Jakub";
+Console.WriteLine(name);
+
+const int age = 67;
+Console.WriteLine(age);
+
+Console.Write(name);
+Console.Write(age);
+  </code></pre>
+        </section>
+        <section>
+          <h2>Čtení textu</h2>
+          <ul>
+            <li class="fragment">Přečte zadaný text uživatelem až do stisknutí Enteru</li>
+            <li class="fragment">Zadaný text můžeme uložit do proměnné</li>
+          </ul>
+        </section>
+        <section>
+          <h2>ČTENÍ TEXTU</h2>
+          <pre><code class="language-csharp" data-line-numbers>string name;
+name = Console.ReadLine();
+
+Console.WriteLine(name);
+  </code></pre>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Výrazy</h2>
+          <ul>
+            <li class="fragment">Určeno k úpravě proměnných</li>
+            <li class="fragment">Výsledek výrazu můžeme znovu uložit do proměnné</li>
+            <li class="fragment">Např. matematické operace</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Matematické operace čísel</h2>
+          <ul>
+            <li class="fragment">Každý jazyk obsahuje základní matematické operace</li>
+            <li class="fragment">Sčítání, odečítání, násobení, dělení</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Matematické operace čísel</h2>
+          <pre><code class="language-csharp" data-line-numbers>int a = 10;
+int b = 3;
+
+int soucet = a + b;
+int rozdil = a - b;
+int soucin = a * b;
+int podil = a / b;
+  </code></pre>
+        </section>
+        <section>
+          <h2>SPOJENÍ ŘETĚZCŮ</h2>
+          <ul>
+            <li class="fragment">Řetězce můžeme spojovat s jinými proměnnými</li>
+            <li class="fragment">Proměnné musí být možné přepsat do textové podoby</li>
+            <li class="fragment">Speciální operátor <code>+</code></li>
+          </ul>
+        </section>
+        <section>
+          <h2>SPOJENÍ ŘETĚZCŮ</h2>
+          <pre><code class="language-csharp" data-line-numbers>string text = "Jmenuju se: ";
+const string name = "Jakub";
+const int age = 7;
+
+text = text + name + ", a je mi " + age;
+  </code></pre>
+        </section>
+
+
       </section>
 
     </div>
