@@ -231,6 +231,7 @@
         <section>
           <h1>IDE</h1>
         </section>
+
         <section>
           <h2>CO JE IDE?</h2>
           <ul>
@@ -241,63 +242,81 @@
         </section>
 
         <section>
-          <h2>NAŠE IDE: Visual Studio</h2>
+          <h2>NAŠE IDE: Visual Studio Code</h2>
           <ul>
-            <li class="fragment">Oficiální IDE pro C# od Microsoftu</li>
-            <li class="fragment">Podpora .NET a tvorby desktop, web i herních aplikací</li>
-            <li class="fragment">Možnosti rozšíření (extensions, pluginy)</li>
+            <li class="fragment">Lehký a flexibilní editor od Microsoftu</li>
+            <li class="fragment">Podpora C# pomocí rozšíření (např. C# for Visual Studio Code)</li>
+            <li class="fragment">Možnosti ladění, Git integrace a další pluginy</li>
           </ul>
         </section>
 
         <section>
           <h2>ALTERNATIVY</h2>
           <ul>
-            <li class="fragment">Visual Studio Code</li>
+            <li class="fragment">Visual Studio (plná IDE varianta)</li>
             <li class="fragment">JetBrains Rider</li>
             <li class="fragment">Online IDE: GitHub Codespaces, Replit, .NET fiddle</li>
           </ul>
         </section>
+
         <section
           style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin-top: 30px;">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png"
-            alt="Visual Studio" width="200">
-          <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/250px-Visual_Studio_Code_1.35_icon.svg.png"
             alt="Visual Studio Code" width="200">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png"
+            alt="Visual Studio" width="200">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/JetBrains_Rider_Icon.svg/800px-JetBrains_Rider_Icon.svg.png"
             alt="JetBrains Rider" width="200">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYnNhUjd9aIFlRxUddoV1HKBsXdXUJLTvB-Q&s"
             alt=".NET Fiddle" width="200">
         </section>
+
         <section>
-          <h1>Visual Studio <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png"
-              alt="Visual Studio" width="100"></h1>
-          <img
-            src="https://learn.microsoft.com/en-us/visualstudio/ide/media/vs-2022/start-window-create-new-project.png?view=vs-2022"
-            alt="Visual Studio" width="80%">
+          <h1>Visual Studio Code <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/250px-Visual_Studio_Code_1.35_icon.svg.png"
+              alt="VS Code" width="100"></h1>
+          <img src="https://code.visualstudio.com/assets/docs/introvideos/basics/editor.png" alt="" width="80%">
         </section>
+
         <section>
-          <a href="https://visualstudio.microsoft.com/" target="_blank">https://visualstudio.microsoft.com/</a>
+          <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
         </section>
+
         <section>
-          <p>Vytvořme si první C# projekt!</p>
+          <h2>.NET CLI – Základní příkazy</h2>
+          <ul>
+            <li class="fragment"><code>dotnet new console -n MyApp</code> — vytvoří nový C# konzolový projekt</li>
+            <li class="fragment"><code>dotnet run</code> — zkompiluje a spustí aplikaci</li>
+            <li class="fragment"><code>dotnet build</code> — zkompiluje aplikaci bez spuštění</li>
+            <li class="fragment"><code>dotnet clean</code> — smaže vygenerované soubory (bin/obj)</li>
+            <li class="fragment"><code>dotnet restore</code> — obnoví závislosti (např. po stažení repa)</li>
+            <li class="fragment"><code>dotnet --version</code> — zobrazí aktuálně nainstalovanou verzi SDK</li>
+          </ul>
         </section>
+
+
+        <section>
+          <p>Vytvořme si první C# projekt ve Visual Studio Code!</p>
+        </section>
+
         <section>
           <h2>Vytvoření projektu</h2>
           <ul>
-            <li class="fragment">Otevřete Visual Studio</li>
-            <li class="fragment">Vyberte "Create a new project" (Ctrl + N)</li>
-            <li class="fragment">Vyberte "Console App (.NET Core)"</li>
-            <li class="fragment">Zadejte název projektu (např. "MyFirstApp")</li>
-            <li class="fragment">Vyberte umístění projektu</li>
-            <li class="fragment">Klikněte na "Create"</li>
-            <li class="fragment">Uložte projekt (Ctrl + S)</li>
+            <li class="fragment">Nainstalujte .NET SDK z <a href="https://dotnet.microsoft.com/download"
+                target="_blank">dotnet.microsoft.com</a></li>
+            <li class="fragment">Otevřete VS Code</li>
+            <li class="fragment">Otevřete terminál (Ctrl + `)</li>
+            <li class="fragment">Vytvořte nový projekt: <code>dotnet new console -n MyFirstApp</code></li>
+            <li class="fragment">Otevřete složku projektu ve VS Code</li>
+            <li class="fragment">Nainstalujte rozšíření "C# for Visual Studio Code"</li>
+            <li class="fragment">Spusťte aplikaci: <code>dotnet run</code></li>
           </ul>
         </section>
       </section>
+
       <section>
         <section>
           <h1>Struktura programu</h1>
