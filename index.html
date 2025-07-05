@@ -286,13 +286,13 @@
         </section>
 
         <section>
-          <h2>.NET CLI – Základní příkazy</h2>
+          <h2>.NET CLI - Základní příkazy</h2>
           <ul>
             <li class="fragment"><code>dotnet new console -n MyApp</code> — vytvoří nový C# konzolový projekt</li>
             <li class="fragment"><code>dotnet run</code> - zkompiluje a spustí aplikaci</li>
             <li class="fragment"><code>dotnet build</code> - zkompiluje aplikaci bez spuštění</li>
             <li class="fragment"><code>dotnet clean</code> - smaže vygenerované soubory (bin/obj)</li>
-            <li class="fragment"><code>dotnet restore</code> - obnoví závislosti (např. po stažení repa)</li>
+            <li class="fragment"><code>dotnet restore</code> - obnoví dependencies</li>
             <li class="fragment"><code>dotnet --version</code> - zobrazí aktuálně nainstalovanou verzi SDK</li>
           </ul>
         </section>
@@ -639,6 +639,18 @@ maxScore = 120; // Chyba - nelze změnit
 
       </section>
       <section>
+        <h2>Cvičení</h2>
+        <p>Odstraňte chyby v kódu a pomocí komentářů chyby vysvětlete.</p>
+        <pre><code class="language-csharp" data-line-numbers>static void Main(string[] args)
+{
+  decimal d = 2.0;
+  decimal l = 2 * 2.0f;
+  float f = 2.5;
+  float g = l;
+  int i = f;
+}</code></pre>
+      </section>
+      <section>
         <section>
           <h1>Konzole</h1>
         </section>
@@ -710,19 +722,27 @@ Console.Write(age);
   </code></pre>
         </section>
         <section>
-          <h2>Čtení textu</h2>
+          <h2>Čtení</h2>
           <ul>
             <li class="fragment">Přečte zadaný text uživatelem až do stisknutí Enteru</li>
             <li class="fragment">Zadaný text můžeme uložit do proměnné</li>
           </ul>
         </section>
         <section>
-          <h2>ČTENÍ TEXTU</h2>
+          <h2>ČTENÍ</h2>
           <pre><code class="language-csharp" data-line-numbers>string name;
 name = Console.ReadLine();
 
 Console.WriteLine(name);
   </code></pre>
+        </section>
+        <section>
+          <h2>Čtení klávesy</h2>
+          <ul>
+            <li class="fragment"><code>Console.ReadKey()</code> čte jednu klávesu</li>
+            <li class="fragment">Na rozdíl od <code>ReadLine()</code> nečeká na Enter</li>
+            <li class="fragment">Vhodné pro "Stiskni libovolnou klávesu..."</li>
+          </ul>
         </section>
       </section>
       <section>
@@ -773,18 +793,7 @@ text = text + name + ", a je mi " + age;
 
       </section>
 
-      <section>
-        <h2>Cvičení 1</h2>
-        <p>Odstraňte chyby v kódu a pomocí komentářů chyby vysvětlete.</p>
-        <pre><code class="language-csharp" data-line-numbers>static void Main(string[] args)
-{
-  decimal d = 2.0;
-  decimal l = 2 * 2.0f;
-  float f = 2.5;
-  float g = l;
-  int i = f;
-}</code></pre>
-      </section>
+
       <section>
         <h2>Cvičení 2</h2>
         <p>Napiš program, který se uživatele zeptá na jeho jméno, věk, výšku v metrech (např. 1.75m) a oblíbené jídlo.
