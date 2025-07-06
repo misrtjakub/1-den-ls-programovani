@@ -645,6 +645,48 @@ maxScore = 120; // Chyba - nelze změnit
         </section>
       </section>
       <section>
+        <section>
+          <h2>Přetypování</h2>
+          <ul>
+            <li class="fragment">Změna typu proměnné na jiný</li>
+            <li class="fragment">Např. <code>double → int</code> nebo <code>int → string</code></li>
+            <li class="fragment">Může být <b>implicitní</b> nebo <b>explicitní</b></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Implicitní přetypování</h2>
+          <pre><code class="language-csharp" data-line-numbers>int a = 10;
+double b = a;
+    </code></pre>
+          <ul>
+            <li class="fragment">Bezpečné - žádná data se neztratí</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Explicitní přetypování</h2>
+          <pre><code class="language-csharp" data-line-numbers>double x = 10.5;
+int y = (int)x;
+    </code></pre>
+          <ul>
+            <li class="fragment">Nutné ručně</li>
+            <li class="fragment">Může dojít ke ztrátě dat</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Úkol</h2>
+          <ul>
+            <li class="fragment">1. Vytvoř proměnnou <code>double</code> s hodnotou 3.9</li>
+            <li class="fragment">2. Přetypuj ji na <code>int</code> a vypiš</li>
+            <li class="fragment">3. Vytvoř proměnnou <code>int</code> s hodnotou 5</li>
+            <li class="fragment">4. Přetypuj ji na <code>float</code> a vypiš</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
         <h2>Pojmenování proměnných</h2>
         <div style="display: flex; justify-content: space-around; gap: 40px; flex-wrap: wrap; margin-top: 30px;">
           <div style="flex: 1; min-width: 300px;">
