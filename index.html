@@ -866,6 +866,76 @@ text = text + name + ", a je mi " + age;
 
 
       </section>
+      <section>
+        <section>
+          <h1>Podmínky</h1>
+        </section>
+        <section>
+          <h2>PODMÍNKA</h2>
+          <ul>
+            <li class="fragment">způsob <strong>větvení</strong> programů</li>
+            <li class="fragment"><u>podmiňujeme</u> volání dalších příkazů</li>
+            <li class="fragment">zjišťujeme, zda je nějaké tvrzení platné</li>
+            <li class="fragment"><strong>booleanova hodnota</strong></li>
+          </ul>
+        </section>
+        <section>
+          <h2>if / else if / else</h2>
+          <ul>
+            <li class="fragment"><code>if</code> - provede kód, pokud je podmínka splněna</li>
+            <li class="fragment"><code>else if</code> - kontroluje další podmínky, pokud předchozí neplatila
+            </li>
+            <li class="fragment"><code>else</code> - provede kód, pokud žádná předchozí podmínka nebyla
+              splněna</li>
+            <li class="fragment">Používá se pro rozhodování mezi více možnostmi</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>ZÁKLADNÍ PODMÍNKA</h2>
+          <pre><code class="language-csharp" data-line-numbers>Console.WriteLine("Ahoj!");
+
+if (true) {
+    Console.WriteLine("Ahoj po druhé!");
+}
+  </code></pre>
+        </section>
+        <section>
+          <h2>NEPLATNÉ TVRZENÍ</h2>
+          <pre><code class="language-csharp" data-line-numbers>Console.WriteLine("Ahoj!");
+
+if (false) {
+    Console.WriteLine("Tohle neuvidíš. :/");
+}
+  </code></pre>
+        </section>
+        <section>
+          <h2>PODMÍNKA</h2>
+          <pre><code class="language-csharp" data-line-numbers>Console.Write("Zadej své jméno: ");
+string name = Console.ReadLine();
+
+if (name == "Anna") {
+    Console.WriteLine("Ahoj Anno!");
+} 
+else if (name == "Karel") {
+    Console.WriteLine("Nazdar Karle!");
+} 
+else {
+    Console.WriteLine("Těší mě, " + name + "!");
+}
+  </code></pre>
+        </section>
+        <section>
+          <h2>ÚKOL</h2>
+          <ul>
+            <li class="fragment">Zeptej se uživatele na jeho věk</li>
+            <li class="fragment">Pokud je mu méně než 13, napiš „Jsi dítě“</li>
+            <li class="fragment">Pokud je mezi 13 a 17, napiš „Jsi teenager“</li>
+            <li class="fragment">Pokud je 18 a více, napiš „Jsi dospělý“</li>
+          </ul>
+        </section>
+
+      </section>
 
       <section>
         <section>
